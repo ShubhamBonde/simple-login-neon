@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("./images/repeated-square-dark.png");
+}
+
+.form-container {
+  width: 50vw;
+  padding: 2rem;
+  border-radius: 20px;
+  border-radius: 50px;
+  border-radius: 50px;
+  background: url("./images/repeated-square-dark.png");
+  border: 1px solid rgb(44, 255, 44);
+}
+.form-container .ip-holder {
+  width: 100%;
+  padding: 3% 0%;
+  background: white;
+  display: flex;
+  align-items: end;
+  border-radius: 10px;
+}
+.form-container .ip-holder input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 5%;
+  font-size: 1.3em;
+  height: 100%;
+}
+.form-container .fname {
+  border-bottom: none;
+  border-width: 0;
+}
+
+.ip-container > input[type=submit] {
+  width: 100%;
+  background-color: rgb(44, 255, 44);
+  border: none;
+  border-radius: 5px;
+  padding: 1vmin 0;
+  color: white;
+  font-style: italic;
+  font-size: xx-large;
+  margin-top: 2vh;
+  cursor: pointer;
+  transition: transform, background-color 0.1s, 0.1s ease-in-out;
+  box-shadow: 6px 22px 37px -8px rgba(0, 0, 0, 0.158);
+}
+.ip-container > input[type=submit]:active {
+  transform: translateY(10%);
+}
+.ip-container > input[type=submit]:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.muted {
+  color: rgba(169, 170, 180, 0.844);
+  font-size: x-small;
+}
+
+label {
+  display: inline-block;
+  font-size: 1.5rem;
+  overflow: hidden;
+  color: rgb(44, 255, 44);
+  margin: 1% 0%;
+}
+
+.heading {
+  color: rgb(44, 255, 44);
+  text-align: center;
+  text-decoration: underline;
+}
+
+.ip-holder {
+  border-bottom: var(--active-border);
+}
+
+@media only screen and (max-width: 1200px) {
+  .form-container {
+    width: 80vw;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .form-container {
+    width: 90vw;
+  }
+}
+.slide-up {
+  animation: show-up 1s ease;
+}
+
+@keyframes show-up {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
